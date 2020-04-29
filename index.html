@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+	<style>
+
+ /* Reset */ 
+html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside, 
+dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;} 
+body{background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;} 
+body,input,select,textarea,button {border:none;font-size:12px; font-family:'Noto Sans KR', sans-serif;color:#727272;} 
+ul,ol,li{list-style:none;} 
+table{width:100%;border-spacing:0;border-collapse:collapse;} 
+img,fieldset{border:0;} 
+address,cite,code,em{font-style:normal;font-weight:normal;} 
+label,img,input,select,textarea,button{vertical-align:middle;} 
+.hide,caption,legend{line-height:0;font-size:1px;overflow:hidden;} 
+hr{display:none;} 
+main,header,section,nav,footer,aside,article,figure{display:block;} 
+a{color:#000;text-decoration:none;} 
+
+* {margin: 0; padding: 0;}
+body {background: linear-gradient(#009999,#1f4e79);}
+#wrap {width: 1200px; height: 900px; margin: 0 auto;}
+header {width: 100%; height: 150px; background: #ffffff;}
+content {float: left; width: 100%; height: 700px; background: #ffffff;;}
+footer {width: 100%; height: 150px; background: #d04845;}
+		
+.txt_center { text-align: center; padding: 30px 0 0;}
+.btn_type1 { display: inline-block;width: 170px; height: 50px; background: #de4f41; line-height: 50px; color:#fff; text-align: center; border-radius: 3px;}
+
+input {width:70%; height:20px;padding:12px 12px;margin:8px 5px; border:3px solid #ffd700; }
+
+  /* 로고 */
+        .logo img {width: 500px;}
+        
+    
+
+		/* 화면 너비 0 ~ 1200px */
+		@media (max-width: 1220px){
+			#wrap {width: 95%;}
+		}
+
+		/* 화면 너비 0 ~ 768px */
+		@media (max-width: 768px){
+			#wrap {width: 100%;}
+		}
+
+		/* 화면 너비 0 ~ 480px */
+		@media (max-width: 480px){
+			#wrap {width: 100%;}
+			header {height: 50px;}
+                                     .btn_type1 { display: inline-block;width: 300px; height: 50px; background: #555555; line-height: 50px; color:#fff; text-align: center; border-radius: 10px; font-size:40px;}
+ .logo img {width: 200px;}
+                                     
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header><div class="txt_center"><div class="logo">
+          <img src="logo.png"  alt="logo"></div></div></header>
+		<content>
+<div class="txt_center">
+<form>
+<label>아이디</labal>
+<input type="text" id="name" name="name"><br>
+<label>비밀번호</labal>
+<input type="password" id="password" name="password">
+</form>
+</div>
+
+                         <div class="txt_center">
+			<a href="#a" class="btn_type1">상담신청</a>
+		</div></content>
+		<footer></footer>
+	</div>
+</body>
+</html>
